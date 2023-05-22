@@ -161,7 +161,7 @@ bl.forEach(el =>{
     el.style.border = `10px ridge #403d3d`
     
     el.addEventListener("mouseover", (event)=>{
-        if(event.ctrlKey){
+        if(event.ctrlKey || event.metaKey){
             event.target.style.border = `10px ridge ${generateNewColor()}`
         }
         if(event.shiftKey){
