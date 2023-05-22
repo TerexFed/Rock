@@ -1,0 +1,510 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #514d4d;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    width: 100vw;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(202, 198, 198);
+    transition: 0.5s;
+}
+.nav{
+    display: flex;
+}
+.nav > h2{
+    margin-left: 20px;
+}
+.mainpic{
+    background-image: url("./images/main_img.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+    color: white;
+    text-align: center;
+}
+.text > h1{
+    font-size: 100px;
+}
+.secondscr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+    font-size: 35px;
+    text-align: center;
+}
+.secondscr > h2{
+    margin-top: 10vw;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #343434;
+    height: 50vw;
+    width: 30vw;
+    border: 5px solid #403d3d;
+    border-radius: 10px;
+}
+.card > h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    width: 20vw;
+}
+.card > h4:nth-child(2n){
+    border-radius: 50%;
+    border: 15px ridge #413e3e;
+    width: 6vw;
+}
+.card > h5{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    width: 20vw;
+    border: 10px ridge #403d3d;
+    border-radius: 5px;
+}
+.bandlogo{
+    width: 25vw;
+    height: 20vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.seccont{
+    display: flex;
+    align-items: center;
+    height: 100vw;
+}
+.butrigth{
+    margin-right: 1vw;
+    width: 3vmin;
+    height: 3vmin;
+    border-top: 1vmin solid white;
+	border-right: 1vmin solid white;
+    right: 0;
+	transform: translate3d(0,-50%,0) rotate(45deg);
+}
+.butrigth:hover{
+    border-color: #222;
+	box-shadow: 0.5vmin -0.5vmin 0 white;
+    transition: 0.4s;
+}
+.butrigth:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+}
+.butleft{
+    width: 3vmin;
+    height: 3vmin;
+    border-top: 1vmin solid white;
+	border-right: 1vmin solid white;
+    transform: translate3d(0,-50%,0) rotate(-135deg);
+}
+.butleft:hover{
+    border-color: #222;
+	box-shadow: 0.5vmin -0.5vmin 0 white;
+    transition: 0.4s;
+}
+.butleft:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+}
+.thirdscr{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    height: 74vw;
+    font-size: 35px;
+    text-align: center;
+}
+.thirdscr > h2{
+    margin-top: 10vw;
+}
+.scheme{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.fb, .sb, .tb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bl{
+    width: fit-content;
+    background-color: #343434;
+    border: 10px ridge #403d3d;
+    margin-top: 40px;
+}
+.bl:nth-child(2n){
+    margin-left: 20px;
+}
+.bl:nth-child(odd){
+    margin-left: 100px;
+}
+.jazz{
+    position: relative;
+}
+.jazz::after{
+    content: '';
+    position: absolute;
+    
+    top: 50px;
+    left: 20px;
+
+    width: 5px;
+    height: 40px;
+    background-color: #222;
+}
+.blues{
+    position: relative;
+}
+.blues::after{
+    content: '';
+    position: absolute;
+    
+    top: 50px;
+    left: 60px;
+
+    width: 5px;
+    height: 40px;
+    background-color: #222;
+}
+.r1b{
+    position: relative;
+}
+.r1b::after{
+    content: '';
+    position: absolute;
+    
+    top: 50px;
+    left: 30px;
+
+    width: 5px;
+    height: 40px;
+    background-color: #222;
+}
+.r1b::before{
+    content: '';
+    position: absolute;
+    
+    top: -70px;
+    left: 148px;
+
+    transform: rotate(70deg);
+    width: 5px;
+    height: 160px;
+    background-color: #222;
+}
+.rockabilly{
+    position: relative;
+}
+.rockabilly::after{
+    content: '';
+    position: absolute;
+    
+    top: 50px;
+    left: 70px;
+
+    width: 5px;
+    height: 40px;
+    background-color: #222;
+}
+.britinvasion{
+    position: relative;
+}
+.britinvasion::after{
+    content: '';
+    position: absolute;
+    
+    top: 50px;
+    left: 120px;
+
+    width: 5px;
+    height: 40px;
+    background-color: #222;
+}
+.hardrock{
+    position: relative;
+}
+.hardrock::after{
+    content: '';
+    position: absolute;
+    
+    top: 50px;
+    left: 70px;
+
+    width: 5px;
+    height: 40px;
+    background-color: #222;
+}
+.hardrock::before{
+    content: '';
+    position: absolute;
+    
+    top: -150px;
+    left: -45px;
+
+    transform: rotate(-40deg);
+    width: 5px;
+    height: 160px;
+    background-color: #222;
+}
+.punk{
+    position: relative;
+}
+.punk::after{
+    content: '';
+    position: absolute;
+    
+    top: 50px;
+    left: 40px;
+
+    width: 5px;
+    height: 40px;
+    background-color: #222;
+}
+.heavymetal{
+    position: relative;
+}
+.heavymetal::after{
+    content: '';
+    position: absolute;
+    
+    top: 50px;
+    left: 135px;
+
+    width: 5px;
+    height: 40px;
+    background-color: #222;
+}
+.newwave{
+    position: relative;
+}
+.newwave::after{
+    content: '';
+    position: absolute;
+    
+    top: 50px;
+    left: 45px;
+
+    width: 5px;
+    height: 40px;
+    background-color: #222;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 5vw;
+    background-color: #222;
+}
+
+
+@media (width >= 2000px) {
+    .mainpic{
+        height: 38vw;
+    }
+    .secondscr{
+        height: 37vw;
+    }
+    .secondscr > h2{
+        margin-top: 5vw;
+    }
+    .card{
+        height: 27vw;
+    }
+    .card > h4{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px;
+        width: 20vw;
+    }
+    .card > h5{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        width: 20vw;
+    }
+    .bandlogo{
+        width: 25vw;
+        height: 30vw;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .thirdscr{
+        height: 40vw;
+    }
+}
+@media (width < 2000px) {
+    .mainpic{
+        height: 70vw;
+    }
+    .secondscr{
+        height: 65vw;
+    }
+    .card{
+        height: 50vw;
+    }
+    .card > h4{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px;
+        width: 20vw;
+    }
+    .card > h5{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        width: 20vw;
+    }
+    .bandlogo{
+        width: 25vw;
+        height: 30vw;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+@media (width <= 1450px) {
+    .mainpic{
+        height: 75vw;
+    }
+    .secondscr{
+        height: 70vw;
+    }
+    .card{
+        height: 40vw;
+    }
+    .card > h4{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        width: 20vw;
+    }
+    .card > h5{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        width: 20vw;
+    }
+    .bandlogo{
+        width: 25vw;
+        height: 30vw;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+@media (width <= 1190px) {
+    .mainpic{
+        height: 90vw;
+    }
+    .secondscr{
+        height: 80vw;
+    }
+    .card{
+        height: 50vw;
+    }
+    .card > h5{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        width: 20vw;
+    }
+    .thirdscr{
+        height: 80vw;
+    }
+}
+@media (width <= 1000px) {
+    .secondscr{
+        height: 100vw;
+    }
+    .card{
+        height: 65vw;
+    }
+    .card > h4{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        width: 30vw;
+    }
+    .card > h5{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        width: 20vw;
+    }
+    .bandlogo{
+        width: 25vw;
+        height: 30vw;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .thirdscr{
+        height: 90vw;
+    }
+}
+@media (width < 800px) {
+    .mainpic{
+        height: 100vw;
+    }
+    .secondscr{
+        height: 70vw;
+    }
+    .card{
+        height: 100vw;
+    }
+    .card > h4{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px;
+        width: 30vw;
+    }
+    .card > h5{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        width: 20vw;
+    }
+    .bandlogo{
+        width: 25vw;
+        height: 30vw;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
