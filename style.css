@@ -16,6 +16,7 @@ header{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: fixed;
     width: 100vw;
+    z-index: 2;
 }
 a{
     color: white;
